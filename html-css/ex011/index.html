@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Responsiveis</title>
+
+<style>
+
+.a{
+    
+    width: 750px;
+    background-color: blueviolet;}
+
+    .b{
+    
+    width: 850px;
+    background-color: blueviolet;}
+
+
+    .c{
+    
+    width: 1000px;
+    background-color: blueviolet;}
+
+
+</style>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+
+    <p class="a"> Imagens Reponsiveis que se adaptam em qualquer dispositivo.</p>
+       <p class="b"> Imagens Reponsiveis que se adaptam em qualquer dispositivo.</p>
+          <p class="c"> Imagens Reponsiveis que se adaptam em qualquer dispositivo.</p>
+
+
+     <picture>
+      
+     <source media="(max-width: 750px)" srcset="imagens/300P.png" type="image/png">
+     <source media="(max-width: 1050px)" srcset="imagens/700M.png" type="image/png">
+    
+       <img src="imagens/1000G.png" alt="logo">
+
+
+
+
+    </picture>
+<h1> Reproduzindo músicas</h1>
+
+
+<p>musica dos estados unidos </p>
+<audio preload="metadata" src="midia/Evanescence - Bring Me To Life.mp3" autoplay controls> </audio>
+<p> <a href="midia/Evanescence - Bring Me To Life.mp3 " target="_blank" download="midia/Evanescence - Bring Me To Life.mp3"> download</a> </p>
+
+
+
+</body>
+</html>

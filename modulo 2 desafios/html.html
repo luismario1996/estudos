@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    /* reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 15px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+}
+
+/* item principal */
+.dropdown {
+  position: relative;
+  width: 200px;
+}
+
+/* submenu escondido */
+.submenu {
+  display: none;
+
+}
+
+/* submenu em coluna */
+.submenu li a {
+  background: #555;
+}
+
+/* hover: mostra o submenu */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* efeito visual */
+.menu a:hover {
+  background: #777;
+}
+
+  </style>
+</head>
+<body>
+  
+  <nav class="menu">
+  <ul>
+    <li class="dropdown">
+      <a href="#">Serviços</a>
+
+      <ul class="submenu">
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+</body>
+</html>

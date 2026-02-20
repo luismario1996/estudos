@@ -1,0 +1,62 @@
+
+
+* {padding: 0px;
+margin: 0px;}
+body { font-family:  Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.884);}
+header {background-color: rgba(221, 11, 11, 0.699);}
+
+header h1 {padding: 10px;
+    text-align: center;
+    color: white;}
+
+nav { display: flex;
+    margin-bottom: 20px;
+    background-color:rgba(221, 11, 11, 0.699);}
+
+span {display: flex;
+    flex-direction: row;
+justify-content: space-around;}
+
+    nav a { 
+   flex: 1;
+    text-decoration: none;
+    color: white;}
+
+main {margin: auto;
+    min-width: 320px;
+    max-width: 900px;
+    text-align: justify;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    padding: 20px;
+    background-color: white;}
+
+    main p {padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.199);}
+        main img {margin-bottom: 10px;}
+        main h1 {margin-bottom: 10px;}
+
+        main ul {
+            padding: 10px;
+            border-radius: 10px;
+            list-style: none;
+                border: 1px solid rgba(0, 0, 0, 0.199);}
+
+    section {
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        margin: auto;}
+
+        footer { color: white;
+            text-align: center;}
+
+           main img{ 
+                 border: 1px solid rgba(0, 0, 0, 0.199);
+           border-radius: 10px;
+            width: 100%;}
+            
+    
