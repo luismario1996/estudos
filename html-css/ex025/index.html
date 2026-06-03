@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha Educacional ACS/ACE</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            line-height: 1.6; 
+            background-color: #f4f4f9; 
+            padding: 20px;
+        }
+
+        .container { max-width: 800px; margin: auto; }
+
+        header { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 20px; 
+            margin-bottom: 30px;
+        }
+
+        .logo { width: 60px; height: auto; }
+
+        h1 { font-size: 1.5rem; text-align: center; color: #333; }
+
+        /* Responsividade do vídeo */
+        .video-wrapper { 
+            position: relative; 
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0; 
+            overflow: hidden; 
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .video-wrapper iframe { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+        }
+
+        .botao-container { text-align: right; margin-top: 15px; }
+        .botao { 
+            display: inline-block; 
+            padding: 10px 25px; 
+            background-color: #007bff; 
+            color: white; 
+            border-radius: 8px; 
+            font-weight: bold;
+        }
+
+        .caixa { 
+            background-color: #d9534f; 
+            color: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin: 30px 0; 
+            text-align: center;
+        }
+
+        footer { text-align: center; font-size: 0.8rem; color: #666; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="/html-css/ex025/foto.png" class="logo" alt="Logo">
+            <h1>Planilha Educacional ACS/ACE</h1>
+            <img src="/html-css/ex025/foto.png" class="logo" alt="Logo">
+        </header>
+
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/cKYNYlPwW6k" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="botao-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrgjeYVU962Qmu9aTWUFEPYGzgphHPnQwNWCbToZqgNTPbmA/viewform?usp=publish-editor" class="botao" target="_blank">Download/Planilha →</a>
+        </div>
+
+        <div class="caixa">
+            <h2>Aviso Importante</h2>
+            <p>Esta planilha não substitui sistemas oficiais. O conteúdo tem finalidade estritamente educacional para otimizar seus registros e acompanhamentos.</p>
+        </div>
+
+        <footer>
+            <p>Desenvolvido para auxiliar no aprendizado e prática dos agentes.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
