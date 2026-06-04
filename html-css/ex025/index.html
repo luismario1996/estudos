@@ -8,17 +8,26 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            line-height: 1.6; 
-            background-color: #f4f4f9; 
-            padding: 20px;
-   
-          
-      
-        }
-
-        .container { max-width: 800px; margin: auto; }
+   body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    line-height: 1.6; 
+    /* Remova o background-color se quiser que a imagem apareça totalmente */
+    background-image: url('./foto/FUNDO.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* A imagem fica parada enquanto o usuário desce a página */
+    background-size: cover;        /* Ajusta a imagem para cobrir toda a tela */
+    padding: 20px;
+    min-height: 100vh;             /* Garante que o body tenha pelo menos a altura da tela */
+}
+      .container { 
+    max-width: 800px; 
+    margin: auto; 
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco levemente transparente */
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
 
         header { 
             display: flex; 
@@ -69,7 +78,7 @@
             text-align: center;
         }
 
-        footer { text-align: center; font-size: 0.8rem; color: #666; margin-top: 20px; }
+        footer { text-align: center; font-size: 0.8rem; color: #00000063; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -77,13 +86,17 @@
     <div class="container">
         <header>
             <img src="./foto/foto.png" class="logo" alt="Logo">
-            <h1>Planilha Educacional ACS/ACE</h1>
+            <h1>Planilha ACS/ACE</h1>
             <img src="./foto/foto.png" class="logo" alt="Logo">
         </header>
 
-        <div class="video-wrapper">
-       <iframe src="./logo.html" frameborder="0"></iframe>
-        </div>
+
+
+<!-- Para o vídeo com a miniatura -->
+<video controls poster="foto/PLANILHA.jpg" style="width: 100%; height: 100%; border-radius: 12px;">
+    <source src="" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeo.
+</video>
 
         <div class="botao-container">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrgjeYVU962Qmu9aTWUFEPYGzgphHPnQwNWCbToZqgNTPbmA/viewform?usp=publish-editor" class="botao" target="_blank">Download/Planilha →</a>
