@@ -21,10 +21,12 @@
     min-height: 100vh;             /* Garante que o body tenha pelo menos a altura da tela */
 }
       .container { 
-    max-width: 800px; 
+    max-width: 1400px; 
     margin: auto; 
 padding: 10px;
-    border-radius: 15px; 
+font-weight: bolder;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #0c070749; 
 
 }
 
@@ -32,9 +34,12 @@ padding: 10px;
             display: flex; 
             align-items: center; 
             justify-content: center; 
+          
          
          
         }
+
+        header > h1 {  color: white;}
 
 
 
@@ -66,6 +71,7 @@ padding: 10px;
             justify-content: center;
             flex-wrap: wrap;
             gap: 10px;
+            
            
     
         }
@@ -75,7 +81,7 @@ padding: 10px;
 .botao { 
     display: inline-block; 
     padding: 10px 25px; 
-    background-color: #007bff; 
+      background-color: #0c070777;  
     color: white; 
     border-radius: 8px; 
     font-weight: bold;
@@ -84,9 +90,11 @@ padding: 10px;
     flex: 1 1 auto;        /* Faz com que o botão tente preencher o espaço, mas respeite seu conteúdo */
     min-width: 150px;      /* Impede que o botão fique estreito demais em telas minúsculas */
 }
+.caixa:hover,a:hover,footer:hover {   
 
+    background-color: #ffffff4b;}
         .caixa { 
-            background-color: #d9534f; 
+            background-color: #0c070777; 
             color: white; 
             padding: 20px; 
             border-radius: 10px; 
@@ -98,7 +106,11 @@ padding: 10px;
         padding: 5px;
     margin-bottom: 5px;}
 
-        footer { text-align: center; font-size: 0.8rem; color: #00000063; margin-top: 20px; }
+        footer {
+            background-color: #0c070777; 
+                  padding: 20px; 
+            border-radius: 10px; 
+            text-align: center; font-size: 0.8rem; color: #ffffff; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -118,20 +130,20 @@ padding: 10px;
     Seu navegador não suporta a reprodução de vídeo.
 </video>
 
-<h1>Em Manutenção - Em Breve</h1>
+
 
         <div class="botao-container">
-             <a href="https://bvsms.saude.gov.br/bvs/publicacoes/novo_modelo_cofinanciamento_federal_faq.pdf" class="botao" target="_blank"> NOVO COFINANCIAMENTO→  
+             <a href="https://bvsms.saude.gov.br/bvs/publicacoes/novo_modelo_cofinanciamento_federal_faq.pdf" class="botao" target="_blank"> NOVO COFINANCIAMENTO 
 </a>
-              <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-metodologica.pdf" class="botao" target="_blank">NOTA METODOLÓGICA→ </a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrgjeYVU962Qmu9aTWUFEPYGzgphHPnQwNWCbToZqgNTPbmA/viewform?usp=publish-editor" class="botao" target="_blank">Download/Planilha→ </a>
+              <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-metodologica.pdf" class="botao" target="_blank">NOTA METODOLÓGICA</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrgjeYVU962Qmu9aTWUFEPYGzgphHPnQwNWCbToZqgNTPbmA/viewform?usp=publish-editor" class="botao" target="_blank">Download/Planilha </a>
         </div>
 
         <div class="caixa">
             <h2 id="aviso-importante">Aviso Importante</h2>
             <p>Esta Planilha Não Substitui Sistemas Oficiais. O Conteúdo Tem Finalidade Estritamente Educacional. As Referências São De Direito Autorais Do Ministério Da Saúde.</p>
  <br>
-            <p>"Este conteúdo é exclusivo para fins de entendimento educional de como funciona os processos de trabalho do ACS/ACE para maximizar um atendimento de excelência a população Brasileira. Todos os dados exibidos são puramente ilustrativos e fictícios, não representando pacientes reais, em total conformidade com a LGPD e o Código de Ética do Servidor."</p>
+            <p>"Este conteúdo é exclusivo para fins de entendimento educional de como funciona os processos de trabalho do ACS/ACE para maximizar um atendimento de excelência a população Brasileira. Todos os dados exibidos são puramente ilustrativos e fictícios, não representando pacientes reais, em total conformidade com a LGPD."</p>
            
         </div>
 
