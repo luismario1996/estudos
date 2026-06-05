@@ -17,16 +17,15 @@
     background-repeat: no-repeat;
     background-attachment: fixed; /* A imagem fica parada enquanto o usuário desce a página */
     background-size: cover;        /* Ajusta a imagem para cobrir toda a tela */
-    padding: 20px;
+
     min-height: 100vh;             /* Garante que o body tenha pelo menos a altura da tela */
 }
       .container { 
     max-width: 800px; 
     margin: auto; 
-    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco levemente transparente */
-    padding: 30px; 
+padding: 10px;
     border-radius: 15px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
 }
 
         header { 
@@ -36,6 +35,8 @@
          
          
         }
+
+
 
         .logo { 
             width: 160px; height: auto; }
@@ -59,15 +60,30 @@
             position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
         }
 
-        .botao-container { text-align: right; margin-top: 15px; }
-        .botao { 
-            display: inline-block; 
-            padding: 10px 25px; 
-            background-color: #007bff; 
-            color: white; 
-            border-radius: 8px; 
-            font-weight: bold;
+        .botao-container { display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+           
+    
         }
+
+    
+
+.botao { 
+    display: inline-block; 
+    padding: 10px 25px; 
+    background-color: #007bff; 
+    color: white; 
+    border-radius: 8px; 
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    text-align: center;    /* Garante que o texto fique centralizado no botão */
+    flex: 1 1 auto;        /* Faz com que o botão tente preencher o espaço, mas respeite seu conteúdo */
+    min-width: 150px;      /* Impede que o botão fique estreito demais em telas minúsculas */
+}
 
         .caixa { 
             background-color: #d9534f; 
@@ -75,8 +91,12 @@
             padding: 20px; 
             border-radius: 10px; 
             margin: 30px 0; 
-            text-align: center;
+            text-align: justify;
         }
+
+        #aviso-importante {text-align: center;
+        padding: 5px;
+    margin-bottom: 5px;}
 
         footer { text-align: center; font-size: 0.8rem; color: #00000063; margin-top: 20px; }
     </style>
@@ -93,7 +113,7 @@
 
 
 <!-- Para o vídeo com a miniatura -->
-<video controls poster="foto/PLANILHA.jpg" style="width: 100%; height: 100%; border-radius: 12px;">
+<video controls poster="./foto/" style="width: 100%; height: 100%; border-radius: 12px;">
     <source src="" type="video/mp4">
     Seu navegador não suporta a reprodução de vídeo.
 </video>
@@ -101,20 +121,21 @@
 <h1>Em Manutenção - Em Breve</h1>
 
         <div class="botao-container">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrgjeYVU962Qmu9aTWUFEPYGzgphHPnQwNWCbToZqgNTPbmA/viewform?usp=publish-editor" class="botao" target="_blank">Download/Planilha →</a>
+             <a href="https://bvsms.saude.gov.br/bvs/publicacoes/novo_modelo_cofinanciamento_federal_faq.pdf" class="botao" target="_blank"> NOVO COFINANCIAMENTO→  
+</a>
+              <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-metodologica.pdf" class="botao" target="_blank">NOTA METODOLÓGICA→ </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrgjeYVU962Qmu9aTWUFEPYGzgphHPnQwNWCbToZqgNTPbmA/viewform?usp=publish-editor" class="botao" target="_blank">Download/Planilha→ </a>
         </div>
 
         <div class="caixa">
-            <h2>Aviso Importante</h2>
-            <p>Esta Planilha Não Substitui Sistemas Oficiais. O Conteúdo Tem Finalidade Estritamente Educacional.</p>
+            <h2 id="aviso-importante">Aviso Importante</h2>
+            <p>Esta Planilha Não Substitui Sistemas Oficiais. O Conteúdo Tem Finalidade Estritamente Educacional. As Referências São De Direito Autorais Do Ministério Da Saúde.</p>
+ <br>
+            <p>"Este conteúdo é exclusivo para fins de entendimento educional de como funciona os processos de trabalho do ACS/ACE para maximizar um atendimento de excelência a população Brasileira. Todos os dados exibidos são puramente ilustrativos e fictícios, não representando pacientes reais, em total conformidade com a LGPD e o Código de Ética do Servidor."</p>
            
         </div>
 
-          <div class="caixa">
-            <h2>Aviso Importante</h2>
-     
-            <p>"Este conteúdo é exclusivo para fins de entendimento educional de como funciona os processos de trabalho do ACS/ACE para maximizar um atendimento de excelência a população Brasileira. Todos os dados exibidos são puramente ilustrativos e fictícios, não representando pacientes reais, em total conformidade com a LGPD e o Código de Ética do Servidor."</p>
-        </div>
+        
 
         <footer>
             <p>Desenvolvido para auxiliar na educação no aprendizado e prática dos agentes de Saúde.</p>
