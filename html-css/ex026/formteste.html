@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Reset básico e fontes */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Cartão do Formulário */
+        .formulario-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            width: 95%;
+            max-width: 350px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .formulario-card h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #333333;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* Grupos de inputs */
+        .input-grupo {
+            margin-bottom: 20px;
+        }
+
+        .input-grupo label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555555;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .input-grupo input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 15px;
+            background-color: #f8fafc;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .input-grupo input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+            background-color: #ffffff;
+        }
+
+        /* Área de Botões */
+        .botao-grupo {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-acessar {
+            width: 100%;
+            padding: 14px;
+            background-color: #667eea;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .btn-acessar:hover {
+            background-color: #5a67d8;
+        }
+
+        .btn-acessar:active {
+            transform: scale(0.98);
+        }
+
+        .btn-esqueci {
+            width: 100%;
+            padding: 12px;
+            background-color: transparent;
+            color: #718096;
+            border: 1px solid #cbd5e0;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-esqueci:hover {
+            background-color: #edf2f7;
+            color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="formulario-card">
+        <form action="./cadastros.php" method="POST">
+            <h2>Sistema De Login</h2>
+            
+            <div class="input-grupo">
+                <label for="ilogi">Login</label>
+                <input type="text" placeholder="Digite seu nome" autocomplete="off" required name="logi" id="ilogi">
+            </div>
+
+            <div class="input-grupo">
+                <label for="isenh">Senha</label>
+                <input type="password" placeholder="Digite sua senha" autocomplete="off" required name="senh" id="isenh">
+            </div>
+
+            <div class="botao-grupo">
+                <input type="submit" value="Acessar" class="btn-acessar" id="iacessar">
+                <input type="submit" value="Esqueci a Senha" class="btn-esqueci" id="iesqueci" formaction="./recuperar_senha.php">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
