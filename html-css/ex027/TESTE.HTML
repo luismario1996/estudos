@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+header.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* --- ESTILO MOBILE (Padrão) --- */
+.nav-menu {
+    display: none; /* Esconde o menu por padrão no celular */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #444;
+    text-align: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.nav-menu li {
+    padding: 1rem 0;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Classe que será ativada pelo JavaScript */
+.nav-menu.active {
+    display: block;
+}
+
+/* --- TRANSIÇÃO PARA TELAS MAIORES (Desktop) --- */
+@media (min-width: 600px) {
+    .menu-toggle {
+        display: none; /* Oculta o botão de hambúrguer no desktop */
+    }
+
+    .nav-menu {
+        display: block; /* Mostra o menu em linha */
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        padding: 0 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+
+    <header class="navbar">
+    <a href="#" class="logo">MeuSite</a>
+    
+    <button class="menu-toggle" aria-label="Abrir Menu">
+        ☰
+    </button>
+
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+
+
+    const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+</script>
+    
+</body>
+</html>
